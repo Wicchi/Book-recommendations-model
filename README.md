@@ -1,13 +1,13 @@
 # Book-recommendations-model
-1. Recommender System Approach
+## Recommender System Approach
 In this context, collaborative filtering emerges as the most suitable approach based on the provided dataset. Collaborative filtering methods harness user-item interactions, specifically user book ratings, to craft personalized recommendations. One facet of collaborative filtering is User-Item Collaborative Filtering, which involves recommending books to users based on the preferences of users who share similar "rating scores." Similarity scores, like cosine similarity, can be calculated between users, enabling the recommendation of books that have been highly rated by similar users.
-2. Handling Big Data
+## Handling Big Data
 For future iterations of the dataset, particularly when dealing with vast amounts of data, the implementation of a scaling solution is essential. Alternating Least Squares (ALS) proves to be a viable choice. ALS, a matrix factorization algorithm widely used in recommendation systems, effectively addresses the challenges posed by large datasets. ALS decomposes the user-item interaction matrix into two lower-dimensional matrices, one representing user latent factors and the other item latent factors, thereby capturing underlying data patterns and preferences.
-3. Leveraging PySpark
+## Leveraging PySpark
 PySpark is a commendable choice when working with substantial datasets. It facilitates distributed computing and adeptly manages big data. The pyspark.ml library includes collaborative filtering algorithms, such as Alternating Least Squares (ALS), tailored for recommendation tasks.
 4. Azure Databricks Integration
 For a structured approach to deploying the machine learning model, Azure Databricks emerges as an optimal platform. Leveraging Azure Databricks enhances the scalability and efficiency of our project.
-5. Implementing the Recommender Model on a Website
+## Implementing the Recommender Model on a Website
 Our recommendation book model can be seamlessly integrated into a JavaScript-based website. This integration involves two distinct facets:
 •	Front-End Development:
 o	UI/UX Design: Skillfully design the user interface, encompassing user profiles, book rating capabilities, and the presentation of book recommendations.
@@ -23,9 +23,9 @@ o	Recommendation Logic: Construct the recommendation engine on the server side, 
 o	Data Preprocessing: Conduct comprehensive data preprocessing and cleansing to render the data compatible with recommendation algorithms.
 6. Enhancing the Machine Learning Model
 For future improvements to our machine learning model, adopting a hybrid approach is advantageous. Combining collaborative and content-based filtering enhances recommendation accuracy. Collaborative filtering can be employed to identify users with similar rating scores, while content-based filtering can further refine recommendations within specific genres or styles. For instance, if a user displays a penchant for fantasy novels with epic quests, content-based filtering can recommend books sharing these attributes.
-7. Cold Start Handling
+## Cold Start Handling
 ALS can struggle with the "cold start" problem, where new users or items have limited data. To handle this, we can provide initial estimates or use hybrid approaches that incorporate content-based features for recommendations.
-Workflow Plan Based on the Dataset
+## Workflow Plan Based on the Dataset
 To plan our workflow based on the provided dataset, we can adhere to the following steps:
 1.	Establish a PySpark environment to ensure the availability of a Spark cluster for distributed processing.
 2.	Load User and Book Ratings data into PySpark DataFrames.
